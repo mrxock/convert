@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="container contall">
+    <h1 id="kurs" class="kurs_text"></h1>
+    <div class="row">
+      <div class="col-8">
+        <form class="row">
+          <div class="col-5">
+            <div class="input-group mt-3 mb-3 ">
+              <span class="input-group-text">$</span>
+              <span class="input-group-text">0.00</span>
+              <input id="dollarInp" type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Dollar kupyorasi" autocomplete="off">
+            </div>
+          </div>
+          <div class="col-2 d-flex justify-content-center align-items-center">
+            <button id="reorder" class="bg-transparent border-0 fs-2">🔄</button>
+          </div>
+          <div class="col-5">
+            <div class="input-group mt-3">
+              <input id="somInp" type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Som kupyorasi" disabled>
+              <span class="input-group-text">Som</span>
+              <span class="input-group-text">0.00</span>
+            </div>
+          </div>
+          <button id="calc" class="ms-auto me-auto w-50 border-info bg-info text-dark" type="button">Hisoblash</button>
+        </form>
+      </div>
+      <div class="col-4">
+        <ol class="list"></ol>
+      </div>
+    </div>
+  </div>
+
+  <script src="./bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
